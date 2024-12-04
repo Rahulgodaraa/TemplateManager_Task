@@ -1,5 +1,8 @@
 import Template from "../models/models.templateModel.js";
+
+
 export const getTemplates = (req, res) => {
+  console.log("Template Model:", Template);
   Template.find()
     .then((templates) => {
       return res.status(200).json({ success: true, message: templates }); // Add return to prevent further execution

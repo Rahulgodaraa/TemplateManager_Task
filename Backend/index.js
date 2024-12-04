@@ -15,8 +15,7 @@ server.use('/api/templates', templateRoutes);
 server.use(errorMiddleware);
 try {
     mongoose.connect(process.env.MONGODBURL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
+        useNewUrlParser: true
     }).then(() => {
         console.log(`MongoDB Connected: ${mongoose.connection.host}`);
     })
