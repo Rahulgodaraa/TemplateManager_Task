@@ -1,3 +1,4 @@
+import Template from "../models/models.templateModel.js";
 export const getTemplates = (req, res) => {
   Template.find()
     .then((templates) => {
