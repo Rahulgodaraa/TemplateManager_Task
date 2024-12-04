@@ -2,7 +2,7 @@ import axios from "axios";
 
 // create an Axios instance with the base URL
 const api = axios.create({
-  baseURL: "http://localhost:8000/api/templates",
+  baseURL: "https://templatemanager-task-backend.onrender.com/api/templates",
 });
 
 // fe/tch all templates (with type filtering if needed in the future)
